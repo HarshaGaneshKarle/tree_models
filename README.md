@@ -1,21 +1,26 @@
-# Decision Trees & Random Forests – Heart Disease Classification ❤️
+# Task 5: Decision Trees and Random Forests – Heart Disease Classification ❤️
 
 ## ✅ What I Did:
-- Used the Heart Disease dataset
-- Trained a Decision Tree and Random Forest
-- Limited tree depth to control overfitting
-- Evaluated both using accuracy, precision, recall
-- Performed 5-fold cross-validation
+- Loaded the Heart Disease Dataset
+- Trained a Decision Tree with depth control
+- Visualized the decision tree (`decision_tree.png`)
+- Trained a Random Forest and compared performance
+- Visualized feature importances (`feature_importance.png`)
+- Evaluated both using classification report and cross-validation
 
-## 🔍 Results:
-- Decision Tree CV Accuracy: ~XX%
-- Random Forest CV Accuracy: ~XX%
-- Random Forest performed better and was less prone to overfitting
-
-## 📊 Visuals:
-- `decision_tree.png` – Tree visualization
-- `feature_importance.png` – Top features
+## 📊 Results:
+| Model            | Accuracy | CV Accuracy |
+|------------------|----------|-------------|
+| Decision Tree    | 80%      | 83%         |
+| Random Forest    | 99%      | 100%        |
 
 ## 💡 Key Insights:
-- Random Forest reduces variance using ensemble learning
-- `cp`, `thalach`, and `oldpeak` were top predictors
+- Random Forest performed significantly better
+- Decision Trees can overfit without depth control
+- Feature importance showed that `ca`, `thal`, and `oldpeak` were strong predictors
+
+## 📁 Files Included:
+- `tree_models.py`: Full training and evaluation code
+- `decision_tree.png`: Visual representation of the decision tree
+- `feature_importance.png`: Random Forest feature impact
+- `heart.csv`: The dataset used
